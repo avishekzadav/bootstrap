@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <!-- <link rel="stylesheet" href="page.css"> -->
+    <script src="https://kit.fontawesome.com/aa72eb84f8.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    box-sizing:content-box;
+}
+.container{
+    width: 1424px;
+    height: 680px;
+    background-image: url(images/forest.jpeg) 
+}
+.topleft{
+    position: absolute;
+    top: 20px;
+    left: 20px;   
+}
+.topleft a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.topright{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+}
+.topright ul li{
+    display: inline-block;
+}
+.topright ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.topright ul li:hover a{
+    color: violet;
+}
+.centered{
+    width: 800px;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered h2{
+    font-family:serif;
+    font-size:28px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+.centered h1{
+    font-size: 48px;
+    font-family: serif;
+    letter-spacing: 2px;
+    margin: 11px 0 20px;
+
+}
+p{
+    color:rgba(255, 255, 255, 0.979);
+    line-height: 30px;
+    font-family:fantasy;
+    letter-spacing: 2px;
+}
+button{
+    background-color:whitesmoke;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-left: 20px;
+    border: 3px solid;
+    background-color:blanchedalmond;
+}
+button:hover{
+    color: wheat;
+    background-color:black;
+}
+.about{
+    width: 1424px;
+    height: 658px;
+    /* background-color: aqua; */
+    margin-top: 70px;
+}
+.habout{
+    width: 100%;
+    height: 167px;
+    /* background-color: blue; */
+    text-align: center;
+}
+.about h3{
+    color: rgba(117, 209, 129, 0.993);
+    font-size: 25px;
+    margin-bottom: 8px;
+    /* background-color: burlywood; */
+}
+.about h2{
+    margin-top: 0px;
+    /* background-color: brown; */
+}
+.about p{
+    color: black;
+    font-size: 15px;
+    font-family: fantasy;
+    line-height: 25px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    /* background-color: chartreuse; */
+}
+.left img{
+    position: absolute;
+    left: 20vw;
+}
+.aboutus{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.left{
+    height: 450px;
+    width: 50%;
+    /* background-color: burlywood; */
+}
+.right{
+    height: 450px;
+    width: 50%;
+    /* background-color:cadetblue; */
+  
+}
+.demo{
+    width: 90%;
+    padding:0 40px;
+    line-height: 20px; 
+    position: relative;
+    bottom: 20px;
+    
+}
+.demo h3{
+    color: rgba(117, 209, 129, 0.993);
+    text-align: start;
+}
+.demo p{
+    font-size:14px;
+    font-family:fantasy;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.services{
+    width: 1424px;
+    height: 680px;
+    background-image: url(images/b1.jpeg);
+    margin-top: 90px;
+}
+.box{
+    width: 1110px;
+    height: 624px;
+    /* background-color: yellowgreen; */
+    padding: 48px 15px;
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}  
+.boxleft{
+    width: 50%;
+    height:80px;
+    /* background-color: violet; */
+}
+.box p{
+    font-family:fantasy;
+    text-align: right;
+    font-size: 15px;
+    padding-right:30px;
+   }
+.boxright{
+    width: 50%;
+    height:80px;
+    /* background-color: tomato; */
+}
+.box h3{
+    color: rgba(117, 209, 129, 0.993);
+    /* background-color: black;  */
+    font-size: 25px;
+    margin: 3px;
+    letter-spacing: 2px;
+}
+.box h2{
+    height: 51px;
+    font-size: 50px;
+    /* background-color: green; */
+    margin: 4px;
+    color: white;
+    letter-spacing: 2px;
+}
+.row{
+display:flex;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+.item{
+    width: 350px;
+    height: 230px;
+    background-color:white;
+    margin:10px;
+    text-align: center;
+    display: inline-block;
+}
+.icon{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    /* background-color:rgb(223, 41, 41); */
+    padding: 30px;
+}   
+.planting h4{
+    color:rgba(117, 209, 129, 0.993);;
+    font-size: 22px;
+    font-family: serif;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+}
+.planting p{
+    color: black;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+.wildlife h4{
+    color: rgba(117, 209, 129, 0.993);
+    font-size: 22px;
+    font-family: serif;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+}
+.wildlife p{
+    color: black;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+.saveplant h4{
+    color: rgba(117, 209, 129, 0.993);
+    font-size: 22px;
+    font-family: serif;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+}
+.saveplant p{
+    color: black;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+.watering h4{
+    color: rgba(117, 209, 129, 0.993);
+    font-size: 22px;
+    font-family: serif;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+}
+.watering p{
+    color: black;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+.savetree h4{
+    color: rgba(117, 209, 129, 0.993);
+    font-size: 22px;
+    font-family: serif;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+}
+.savetree p{
+    color: black;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+.ecoplant h4{
+    color: rgba(117, 209, 129, 0.993);
+    font-size: 22px;
+    font-family: serif;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+
+}
+.ecoplant p{
+    color: black;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+.gallery{
+    width: 100%;
+    height: 1294px;
+    /* background-color: cadetblue; */
+}
+.contain1{
+    width: 1110px;
+    height: 1200px;
+    /* background-color: coral; */
+    margin:0 150px;
+    padding: 48px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contleft{
+    width: 555px;
+    height: 80px;
+    text-align: end;
+    /* background-color: crimson; */
+    margin-top: 20px;
+}
+.contright{
+    width: 555px;
+    height: 80px;
+    /* background-color: darkblue; */
+    margin-top: 20px;
+}
+.contleft h6{
+    font-size: 25px;
+    /* background-color:black; */
+    margin:3px;
+    letter-spacing: 2px;
+    color: rgba(117, 209, 129, 0.993);
+    height: 25px;
+}
+.contleft h3{
+    height: 50px;
+    font-size: 40px;
+    /* background-color: brown; */
+    margin: 4px;
+    line-height: 60px;
+}
+.contright p{
+    /* background-color: indigo; */
+    font-family:fantasy;
+    text-align: left;
+    font-size: 15px;
+    padding-left:30px;
+    color: black;
+}
+.galimage{
+    width:100%;
+    height: 1058px;
+    /* background-color: aqua */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.galimgleft{
+    width:50%;
+    height: 1058px;
+    /* background-color: blueviolet; */
+}
+.galimgright{
+    width:49%;
+    height: 1058px;
+    /* background-color:chartreuse ; */
+    margin-left: 1%;
+}
+.fleft{
+    width: 540px;
+    height: 405px;
+    /* background-color:bisque; */
+    margin: 10px 8px 18px;
+    background-image: url(images/g1.jpeg);
+}
+.sleft{
+    width: 540px;
+    height: 200px;
+    /* background-color:chocolate; */
+    margin: 10px 8px 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fsleft{
+    width:48%;
+    height:200px;
+    /* background-color: crimson; */
+    margin-right: 4px;
+    margin-left:5px ;
+    background-image: url(images/g2.jpeg);
+}
+.ssleft{
+    width: 48%;
+    height:200px;
+    /* background-color:darkturquoise; */
+    margin-left: 4px;
+    margin-right: 5px;
+    background-image: url(images/g3.jpeg);
+}
+.tleft{
+    width: 540px;
+    height: 405px;
+    /* background-color: cornflowerblue; */
+    margin: 10px 8px 18px;
+    background-image: url(images/g7.jpeg);
+}
+.frig{
+    width: 540px;
+    height: 328px;
+    /* background-color: deeppink; */
+    margin: 10px 2px 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fflrig{
+    width:48% ;
+    height: 328px;
+    /* background-color:indigo; */
+    margin-right: 4px;
+    margin-left: 5px;
+    background-image: url(images/g4.jpeg);
+    background-repeat: no-repeat;
+}
+.sflrig{
+    width:48% ;
+    height: 328px;
+    /* background-color:hotpink; */
+    margin-left: 4px;
+    margin-right: 5px;
+    background-image: url(images/t3.jpeg);
+
+}
+.srig{
+    width: 540px;
+    height: 200px;
+    /* background-color:chocolate; */
+    margin: 10px 2px 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fslrig{
+    width: 48%;
+    height: 200px;
+    /* background-color:dodgerblue; */
+    margin-right: 4px;
+    margin-left: 5px;
+    background-image: url(images/g4.jpeg);
+}
+.sslrig{
+    width: 48%;
+    height: 200px;
+    /* background-color:firebrick; */
+    margin-left: 4px;
+    margin-right: 5px;
+    background-image: url(images/g5.jpeg);
+   
+
+}
+.trig{
+    width: 540px;
+    height: 405px;
+    /* background-color:dimgray; */
+    margin: 10px 2px 18px;
+    background-image: url(images/g6.jpeg);
+}
+.data{
+    width: 1424px;
+    height: 243px;
+    background-color: #b1d474;
+    padding: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.daitm{
+    width: 350px;
+    height: 100px;
+    /* background-color: thistle; */
+    padding: 72px 0;
+    text-align: center;
+}
+.icn{
+    font-size: 40px;
+    color: white;
+}
+.number{
+    font-size: 30px;
+    font-family:sans-serif;
+    margin-top: 5px;
+}
+.daitm h4{
+    font-size: 25px;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.features{
+    width: 1424px;
+    height: 680px;
+    /* background-color: turquoise; */
+    margin-top: 60px;
+}
+.fetbox{
+    width: 1110px;
+    height: 624px;
+    /* background-color: yellowgreen; */
+    padding: 0 15px;
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+}  
+.fetleft{
+    width: 50%;
+    height:80px;
+    /* background-color: violet; */
+}
+.fetleft p{
+    font-family:fantasy;
+    text-align: right;
+    font-size: 15px;
+    padding-right:30px;
+    color: black;
+   }
+.fetright{
+    width: 50%;
+    height:80px;
+    /* background-color: tomato; */
+}
+.fetright h3{
+    color: rgba(117, 209, 129, 0.993);
+    /* background-color: black;  */
+    font-size: 25px;
+    margin: 3px;
+    letter-spacing: 2px;
+}
+.fetright h2{
+    height: 51px;
+    font-size: 50px;
+    /* background-color: green; */
+    margin: 4px;
+    color: black;
+    letter-spacing: 2px;
+}
+.row{
+    width: 1110px;
+    height: 470px;
+    /* background-color: violet; */
+}
+.ltcol{
+    width: 50%;
+    height: 470px;
+    /* background-color: brown; */
+}
+.rtcol{
+    width: 50%;
+    height: 470px;
+    /* background-color: crimson; */
+}
+.frtcol{
+    width: 595px;
+    height: 98px;
+    /* background-color: aqua; */
+    padding: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.srtcol{
+    width: 565px;
+    height: 98px;
+    /* background-color: aqua; */
+    padding: 20px;
+    margin:0 0 24px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.trtcol{
+    width: 595px;
+    height: 98px;
+    /* background-color: aqua; */
+    padding: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flrtc, .slrtc, .tlrtc{
+    width: 135px;
+    height: 98px;
+    padding: 0 15px;
+    /* background-color: blue; */
+}
+.frtcol, .srtcol, .trtcol{
+    background-color: #F7F7F7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: -3px 7px 39px -5px  rgb(99, 98, 98);
+}
+.srrtc, .ssrtc, .tsrtc{
+    width: 368.6px;
+    height: 98px;
+    padding: 0 15px;
+    /* background-color: chocolate; */
+}
+.srrtc h4, .ssrtc h4, .tsrtc h4{
+    color: rgba(117, 209, 129, 0.993);
+    font-size: 22px;
+    font-family: serif;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+    /* background-color: black; */
+}
+.srrtc p, .ssrtc p, .tsrtc p{
+    color: black;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+.cic{
+    font-size: 60px;
+    text-align: center;
+    padding: 20px;
+}
+.plans{
+    width: 1424px;
+    height: 602px;
+    /* background-color: orangered; */
+    /* margin-top: 70px; */
+    background-image: url(images/b1.jpeg);
+}
+.plans1{
+    width: 1200px;
+    height: 560px;
+    /* background-color: coral; */
+    padding:5px 10px;
+    margin:0 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.planlt{
+    width: 600px;
+    height: 80px;
+    text-align: end;
+    /* background-color: crimson; */
+    margin-top: 20px;
+}
+.planrt{
+    width: 600px;
+    height: 80px;
+    /* background-color: darkblue; */
+    margin-top: 20px;
+}
+.planlt h6{
+    font-size: 25px;
+    /* background-color:black; */
+    margin:0px;
+    letter-spacing: 2px;
+    color: rgba(117, 209, 129, 0.993);
+    height: 25px;
+}
+.planlt h3{
+    height: 50px;
+    font-size: 40px;
+    /* background-color: brown; */
+    margin: 2px;
+    line-height: 60px;
+    color: whitesmoke;
+}
+.planrt p{
+    /* background-color: indigo; */
+    font-family:fantasy;
+    text-align: left;
+    font-size: 15px;
+    padding-left:30px;
+    color:whitesmoke;
+}
+.plarow{
+    width: 1200px;
+    height: 366px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.plaitm{
+    width: 255px;
+    height: 366px;
+    background-color: white;
+    padding: 0 15px;
+}
+.fd h4{
+    font-size: 25px;
+    color: #b1d474;
+    text-align: center;
+    padding: 0px;
+    margin: 20px 0 0 0;
+   
+}
+.price{
+    font-size: 40px;
+    color: #b1d474;
+}
+.fd h3{
+    padding-top: 0px;
+    text-align: center;
+    font-size: 20px;
+}
+.sd{
+    width: 255px;
+    height: 160px;
+    /* background-color: blueviolet; */
+}
+.sd ul li{
+    list-style: none;
+    font-size: 18px;
+    padding:0 40px;
+    line-height: 30px;
+    font-family: fantasy;
+}
+.pbutton{
+    width: 132px;
+    height: 20px;
+    background-color:#b1d474;
+    text-align: center;
+    margin: 10px 46px;
+    border: none;
+}
+.pbutton:hover{
+    cursor: pointer;
+}
+.clints{
+    width: 1424px;
+    height: 656px;
+    /* background-color: mediumslateblue; */
+    margin-top: 70px;
+}
+.clbox{
+    width: 1200px;
+    height: 624px;
+    /* background-color: yellowgreen; */
+    padding: 0 15px;
+    margin: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+}  
+.cleft{
+    width: 50%;
+    height:80px;
+    /* background-color: violet; */
+}
+.cleft p{
+    font-family:fantasy;
+    text-align: right;
+    font-size: 15px;
+    padding-right:30px;
+    color: black;
+   }
+.cright{
+    width: 50%;
+    height:80px;
+    /* background-color: tomato; */
+}
+.cright h3{
+    color: rgba(117, 209, 129, 0.993);
+    /* background-color: black;  */
+    font-size: 25px;
+    margin: 3px;
+    letter-spacing: 2px;
+}
+.cright h2{
+    height: 51px;
+    font-size: 50px;
+    /* background-color: green; */
+    margin: 4px;
+    color: black;
+    letter-spacing: 2px;
+}
+.clrow{
+    width: 1140px;
+    height: 400px;
+    /* background-color: blue; */
+    margin: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+.clitm{
+    width: 350px;
+    height: 390px;
+    padding: 0 10px;
+    /* background-color: brown; */
+    margin: auto;
+}
+.fcl{
+width: 350px;
+height: 160px;
+/* background-color:aqua; */
+margin-bottom: 0px;
+}
+.fcl img{
+    border: 5px solid rgb(185, 183, 183)
+}
+.scl{
+width: 350px;
+height: 210px;
+margin-top: 5px;
+/* background-color:grey; */
+}
+.scl h4{
+    font-size: 25px;
+    color: #b1d474;
+    margin-bottom:5px;
+}
+.scl h6{
+    font-size: 20px;
+    color: black;
+    margin: 0;
+
+}
+.scl p{
+    font-size: 15px;
+    color: black;
+    letter-spacing: 1px;
+}
+.save{
+    width: 1424px;
+    height: 326px;
+    background-color:  #b1d474;
+}
+.sabox{
+    width: 1200px;
+    height: 182px;
+    padding: 48px 15px;
+    margin: 0 149px;
+    /* background-color: hotpink; */
+}
+.saf{
+    width: 444px;
+    height: 62px;
+    /* background-color: khaki; */
+    margin: 0 333px;
+    text-align: center;
+}
+.safb{
+    font-size: 40px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 20px;
+}
+.sas{
+    width: 1200px;
+    height: 100px;
+    /* background-color: lawngreen; */
+    margin-top: 48px;
+    text-align: center;
+}
+.sas h4{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: whitesmoke;
+    margin-bottom: 0px;
+}
+.sas p{
+    font-size: 14px;
+    color: #000000;
+    margin-top: 5px;
+}
+.best{
+    width: 1424px;
+    height: 745px;
+    /* background-color: lightsalmon; */
+}
+.bebox{
+    width: 1110px;
+    height: 620px;
+    /* background-color: yellowgreen; */
+    padding: 48px 15px;
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+}  
+.belt{
+    width: 50%;
+    height:80px;
+    /* background-color: violet; */
+    text-align: right;
+}
+.belt p{
+    font-family:fantasy;
+    text-align: left;
+    font-size: 15px;
+    padding-left:30px;
+    color: black;
+   }
+.bert{
+    width: 50%;
+    height:80px;
+    /* background-color: tomato; */
+ }
+.bert h3{
+    color: rgba(117, 209, 129, 0.993);
+    /* background-color: black;  */
+    font-size: 25px;
+    margin: 3px;
+    letter-spacing: 2px;
+}
+.bert h2{
+    height: 51px;
+    font-size: 50px;
+    /* background-color: green; */
+    margin: 4px;
+    color: black;
+    letter-spacing: 2px;
+}
+.berow{
+    width: 1140px;
+    height: 461px;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.beitm{
+    width: 255px;
+    height: 461px;
+    /* background-color: coral; */
+    padding: 0 5px;
+    margin: 0 6px;
+}
+.bet{
+    width: 255px;
+    height: 238px;
+}
+.bed{
+    width: 255px;
+    height: 109px;
+    /* background-color:crimson; */
+    margin-top:100px;
+}
+.fbed h4{
+    font-size: 25px;
+    /* background-color: cyan; */
+    text-align: center;
+    color: #b1d474;  
+    margin-bottom: 10px;
+}
+.sbed p{
+    font-size: 22px;
+    /* background-color:darkgreen; */
+    color: black;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.tbed{
+    /* background-color: blue; */
+    text-align: center;
+}
+.bicn{
+    font-size: 15px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    margin: 5px;
+}
+.blog{
+    width: 1424px;
+    height: 768px;
+    /* background-color: indigo; */
+    background-image: url(images/b1.jpg);
+}
+.bbox{
+    width: 1110px;
+    height: 624px;
+    /* background-color: yellowgreen; */
+    padding: 48px 15px;
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+}  
+.xlt{
+    width: 50%;
+    height:80px;
+    /* background-color: violet; */
+    text-align: right;
+}
+.xrt p{
+    font-family:fantasy;
+    text-align: left;
+    font-size: 15px;
+    padding-left:30px;
+   }
+.xrt{
+    width: 50%;
+    height:80px;
+    /* background-color: tomato; */
+}
+.xlt h3{
+    color: rgba(117, 209, 129, 0.993);
+    /* background-color: black;  */
+    font-size: 25px;
+    margin: 3px;
+    letter-spacing: 2px;
+}
+.xlt h2{
+    height: 51px;
+    font-size: 50px;
+    /* background-color: green; */
+    margin: 4px;
+    color: white;
+    letter-spacing: 2px;
+}
+.brow{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 1140px;
+    height: 483.5px;
+    margin: auto;
+    /* background-color: aqua; */
+}
+.bitem{
+    width: 300px;
+    height: 483.5px;
+    margin: 30px;
+    /* background-color: blueviolet; */
+}
+.it{
+    width: 280px;
+    height: 443.5px;
+    background-color:white;
+    padding: 20px;
+}
+.fit{
+    width: 280px;
+    height: 232.5px;
+    /* background-color: chartreuse; */
+}
+.fit img{
+    width: 280px;
+    height: 232px;
+}
+.sit{
+    width: 280px;
+    height: 195px;
+    /* background-color: darkgoldenrod; */
+}
+.sit h6{
+    font-size: 20px;
+    /* background-color: darkgreen; */
+    margin:15px 0 0 0;
+}
+.sit h4{
+    font-size: 25px;
+    /* background-color: darkmagenta; */
+    margin: 2px 0 0 0;
+    color: #b1d474;
+}
+.sit p{
+    font-size: 15px;
+    /* background-color: darksalmon; */
+    line-height: 25px;
+    margin-bottom: 5px;
+    color: black;
+}
+.ld{
+    width: 280px;
+    /* background-color: aqua; */
+    height: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.ll{
+    width: 50%;
+    height: 16px;
+    font-size: 16px;
+    text-align: left;
+    /* background-color: yellow; */
+}
+.lr{
+    text-align: right;
+    width: 50%;
+    height: 16px;
+    font-size: 16px;
+    /* background-color: yellowgreen; */
+}
+.touch{
+    width: 1424px;
+    height: 669px;
+    /* background-color: hotpink ; */
+    margin-top:50px;
+}
+.contouch{
+    width: 1140px;
+    height: 621px;
+    /* background-color: yellow; */
+    margin: auto;
+}
+.tobox{
+    width: 1140px;
+    height: 76px;
+    /* background-color:blue; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.toleft{
+    width: 50%;
+    height: 76px;
+    /* background-color: brown; */
+}
+.toleft p{
+    font-size:15px;
+    font-family: fantasy;
+    color: black;
+    padding-right: 30px;
+    text-align: right;
+    /* background-color: burlywood; */
+}
+.toright{
+width: 50%;
+height: 76px;
+/* background-color: crimson; */
+}
+.tfright h6{
+    font-size: 25px;
+    /* background-color:black; */
+    margin:3px;
+    letter-spacing: 2px;
+    color: rgba(117, 209, 129, 0.993);
+    height: 25px;
+}
+.tsright h3{
+    height: 50px;
+    font-size: 40px;
+    /* background-color: brown; */
+    margin: 4px;
+    line-height: 60px;
+}
+.infobo{
+    width: 1140px;
+    height: 385px;
+    /* background-color: darkorchid; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.boleft{
+    width: 50%;
+    height: 385px;
+    /* background-color: darkturquoise; */
+}
+.boright{
+    width: 50%;
+    height: 385px;
+    /* background-color: darkslateblue; */
+}
+.frt{
+    height: 120px;
+    /* background-color: crimson; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.ffrt{
+    width: 143px;
+    height: 97px;
+    /* background-color: darkseagreen; */
+}
+.sfrt{
+    width: 427px;
+    height: 97px;
+    /* background-color: darkturquoise ; */
+}
+.srt{
+    height: 120px;
+    /* background-color:darkcyan; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:30px;  
+}
+.fsrt{
+    width: 143px;
+    height: 97px;
+    /* background-color: darkturquoise; */
+    margin-top: 20px;
+}
+.ssrt{
+    width: 427px;
+    height: 97px;
+    /* background-color: deeppink ; */
+}
+.trt{
+    height: 120px;
+    /* background-color: darkmagenta; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:30px;
+}
+.tfrt{
+    width: 143px;
+    height: 97px;
+    /* background-color: deeppink; */
+    margin-top: 20px;
+}
+.tsrt{
+    width: 427px;
+    height: 97px;
+    /* background-color: darkseagreen; */
+}
+.ffrt, .fsrt, .tfrt{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+.sfrt h6, .ssrt h6, .tsrt h6{
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: rgba(117, 209, 129, 0.993);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.sfrt p, .ssrt p, .tsrt p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: black;
+    margin-top: 0;
+    font-family:fantasy;
+}
+.formarea input{
+    width: 550px;
+    height: 47px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #efefef;
+    margin: 5px;
+    border: 1px solid #dadada;
+    box-shadow: 5px 5px 3px rgb(99, 98, 98);
+    border-radius: 10px;
+    padding-left: 10px;
+ }
+.formarea textarea {
+    resize: none;
+    height:220px;
+    width: 550px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #efefef;
+    margin: 5px;
+    border: 1px solid #dadada;
+    box-shadow: 5px 5px 3px rgb(99, 98, 98);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.fbutton{
+    width: 500px;
+    height: 20px;
+    background-color:#b1d474;
+    text-align: center;
+    margin: 5px 0 5px 16px;
+    border: none;
+}
+.map{
+    width: 1424px;
+    height: 328px;
+    background-color: green ;
+}
+.footer{
+    width: 1424px;
+    height: 190px;
+    background-color: #b1d474;
+    font: bold;
+    /* font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 24px 0;
+    letter-spacing: 2px; */
+    text-align: center;
+}
+.ffot{
+    font-size: 18px;
+    color: white;
+    padding: 24px 0;
+    letter-spacing: 2px;
+    /* background-color: tomato; */
+}
+.sfot{
+    height: 60px;
+    /* background-color: turquoise; */
+}
+.tfot{
+    height:60px;
+    /* background-color: brown; */
+}
+.foi{
+    font-size: 15px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    margin:0 10px;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="topleft"><a href="page.html">Forest</a></div>
+        <div class="topright">
+            <ul>
+                <li><a href="page.html">Home</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+        </div>
+        <div class="centered">
+            <h2>Global Warming</h2>
+            <h1>Save Forest Save Earth</h1>
+            <p><b>
+                    Scientists agree that the earth’s rising temperatures are fueling longer and hotter heat waves, a
+                    more
+                    frequent droughts, heavier rainfall, and more powerful hurricanes.
+                </b></p>
+            <br><br>
+            <button>About Us</button>
+            <button>Join Us</button>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="habout">
+            <h3>What we do</h3>
+            <h2>STANDING TOGETHER FOR A BETTER WORLD</h2>
+            <p><b>If we don’t take the action today, tomorrow will be the End. <br>
+                    Let us be awake and fight back against global warming</b></p>
+        </div>
+        <div class="aboutus">
+            <div class="left">
+                <img src="images/leaf.jpeg" alt="leaf">
+            </div>
+            <div class="right">
+                <div class="demo">
+                    <h3>About Us</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aspernatur impedit atque
+                        nulla ipsum?
+                        Ipsa aliquid nostrum cumque itaque, non debitis quidem dolorum ex fuga error consequuntur.
+                        Totam, voluptatum
+                        aliquid!Lorem
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="box">
+            <div class="boxleft">
+                <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloremque tenetur reiciendis
+                        aliquid volup</b></p>
+            </div>
+            <div class="boxright">
+                <h3>What we provide</h3>
+                <h2>Our Services</h2>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="planting">
+                        <span><i class="fas fa-seedling icon"></i></span>
+                        <h4>Planting</h4>
+                        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wildlife">
+                        <span><i class="fas fa-paw icon"></i></span>
+                        <h4>Wildlife</h4>
+                        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="saveplant">
+                        <span><i class="fas fa-leaf icon"></i></span>
+                        <h4>Save Plants</h4>
+                        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="watering">
+                        <span><i class="fas fa-tint icon"></i></span>
+                        <h4>Watering</h4>
+                        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="savetree">
+                        <span><i class="fas fa-tree icon"></i></span>
+                        <h4>Save Trees</h4>
+                        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ecoplant">
+                        <span><i class="fas fa-temperature-high icon"></i></span>
+                        <h4>Eco Climate</h4>
+                        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="contain1">
+            <div class="contleft">
+                <h6>See our work</h6>
+                <h3>Our Gallery</h3>
+            </div>
+            <div class="contright">
+                <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloremque tenetur reiciendis
+                        aliquid volup</b></p>
+            </div>
+            <div class="galimage">
+                <div class="galimgleft">
+                    <div class="fleft">
+                        <div class="g1">
+                            <!-- <img src="images/g1.jpeg" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="sleft">
+                        <div class="fsleft">
+                            <div class="g2">
+                                <!-- <img src="images/g2.jpeg" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="ssleft">
+                            <div class="g3">
+                                <!-- <img src="images/g3.jpeg" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tleft">
+                        <div class="g7">
+                            <!-- <img src="images/g7.jpeg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="galimgright">
+                    <div class="frig">
+                        <div class="fflrig">
+                            <div class="g4">
+                                <!-- <img src="images/g4.jpeg" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="sflrig">
+                            <div class="t3">
+                                <!-- <img src="images/t3.jpeg" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="srig">
+                        <div class="fslrig">
+                            <div class="g4">
+                                <!-- <img src="images/g4.jpeg" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="sslrig">
+                            <div class="g5">
+                                <!-- <img src="images/g5.jpeg" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trig">
+                        <div class="g6">
+                            <!-- <img src="images/g6.jpeg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="data">
+        <div class="daitm">
+            <span><i class="fas fa-paw icn"></i></span>
+            <div class="number">1200</div>
+            <h4>Save</h4>
+        </div>
+        <div class="daitm">
+            <span><i class="fas fa-project-diagram icn"></i></span>
+            <div class="number">2000</div>
+            <h4>Projects</h4>
+        </div>
+        <div class="daitm">
+            <span><i class="fas fa-seedling icn"></i></span>
+            <div class="number">4000</div>
+            <h4>Plants</h4>
+        </div>
+        <div class="daitm">
+            <span><i class="fas fa-globe-asia icn"></i></span>
+            <div class="number">200</div>
+            <h4>Countries</h4>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="fetbox">
+            <div class="fetleft">
+                <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloremque tenetur reiciendis
+                        aliquid volup</b></p>
+            </div>
+            <div class="fetright">
+                <h3>Our hard work</h3>
+                <h2>Our Features</h2>
+            </div>
+            <div class="row">
+                <div class="ltcol">
+                    <img src="images/ab2.jpg" alt="planting">
+                </div>
+                <div class="rtcol">
+                    <div class="frtcol">
+                        <div class="flrtc">
+                            <span><i class="fas fa-tree cic"></i></span>
+                        </div>
+                        <div class="srrtc">
+                            <h4>Planting Trees andPlants</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit optio reiciendis maiores</p>
+
+                        </div>
+                    </div>
+                    <div class="srtcol">
+                        <div class="slrtc">
+                            <span><i class="fas fa-cloud-upload-alt cic"></i></span>
+                        </div>
+                        <div class="ssrtc">
+                            <h4>Change Climate Bio-Epoxy</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit optio reiciendis maiores</p>
+
+                        </div>
+                    </div>
+                    <div class="trtcol">
+                        <div class="tlrtc">
+                            <span><i class="fas fa-shield-alt cic"></i></span>
+                        </div>
+                        <div class="tsrtc">
+                            <h4>Reduce Pollution For Life</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit optio reiciendis maiores</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="plans">
+        <div class="plans1">
+            <div class="planlt">
+                <h6>Our Plans</h6>
+                <h3>Our Prices</h3>
+            </div>
+            <div class="planrt">
+                <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloremque tenetur reiciendis
+                        aliquid volup</b></p>
+            </div>
+            <div class="plarow">
+                <div class="plaitm">
+                    <div class="fd">
+                        <h4>GOLDEN</h4>
+                        <h3>
+                            <span class="sup">$</span>
+                            <span class="price">50</span>
+                            / month
+                        </h3>
+                    </div>
+                    <div class="sd">
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Dolor sit</li>
+                            <li>Consetetuer</li>
+                            <li>Adipiscing</li>
+                            <li>Lorem ipsum</li>
+                        </ul>
+                    </div>
+                    <div class="td">
+                        <button class="pbutton">Book Now</button>
+                    </div>
+                </div>
+                <div class="plaitm">
+                    <div class="fd">
+                        <h4>PREMIUM</h4>
+                        <h3>
+                            <span class="sup">$</span>
+                            <span class="price">60</span>
+                            / month
+                        </h3>
+                    </div>
+                    <div class="sd">
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Dolor sit</li>
+                            <li>Consetetuer</li>
+                            <li>Adipiscing</li>
+                            <li>Lorem ipsum</li>
+                        </ul>
+                    </div>
+                    <div class="td">
+                        <button class="pbutton">Book Now</button>
+                    </div>
+                </div>
+                <div class="plaitm">
+                    <div class="fd">
+                        <h4>PLATIUM</h4>
+                        <h3>
+                            <span class="sup">$</span>
+                            <span class="price">70</span>
+                            / month
+                        </h3>
+                    </div>
+                    <div class="sd">
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Dolor sit</li>
+                            <li>Consetetuer</li>
+                            <li>Adipiscing</li>
+                            <li>Lorem ipsum</li>
+                        </ul>
+                    </div>
+                    <div class="td">
+                        <button class="pbutton">Book Now</button>
+                    </div>
+                </div>
+                <div class="plaitm">
+                    <div class="fd">
+                        <h4>SILVER</h4>
+                        <h3>
+                            <span class="sup">$</span>
+                            <span class="price">80</span>
+                            / month
+                        </h3>
+                    </div>
+                    <div class="sd">
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Dolor sit</li>
+                            <li>Consetetuer</li>
+                            <li>Adipiscing</li>
+                            <li>Lorem ipsum</li>
+                        </ul>
+                    </div>
+                    <div class="td">
+                        <button class="pbutton">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clints">
+        <div class="clbox">
+            <div class="cleft">
+                <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloremque tenetur reiciendis
+                        aliquid volup</b></p>
+            </div>
+            <div class="cright">
+                <h3>What People Says</h3>
+                <h2>Our Clients</h2>
+            </div>
+            <div class="clrow">
+                <div class="clitm">
+                    <div class="fcl">
+                        <img src="images/t1.jpg" width="160" height="160">
+                    </div>
+                    <div class="scl">
+                        <h4>Jack Killy</h4>
+                        <h6>Our Client</h6>
+                        <p>Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                </div>
+                <div class="clitm">
+                    <div class="fcl">
+                        <img src="images/t3.jpg" width="160" height="160">
+                    </div>
+                    <div class="scl">
+                        <h4>Ted Willson</h4>
+                        <h6>Our Client</h6>
+                        <p>Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                </div>
+                <div class="clitm">
+                    <div class="fcl">
+                        <img src="images/t2.jpg" width="160" height="160">
+                    </div>
+                    <div class="scl">
+                        <h4>Orcand Keen</h4>
+                        <h6>Our Client</h6>
+                        <p>Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="save">
+        <div class="sabox">
+            <div class="saf">
+                <span><i class="fas fa-play-circle safb"></i></span>
+            </div>
+            <div class="sas">
+                <h4>save forest and nature</h4>
+                <p>Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="best">
+        <div class="bebox">
+            <div class="belt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                </p>
+            </div>
+            <div class="bert">
+                <h3>We Are Best</h3>
+                <h2>Our Volunteer</h2>
+            </div>
+            <div class="berow">
+                <div class="beitm">
+                    <div class="bet">
+                        <img src="images/t1.jpg">
+                    </div>
+                    <div class="bed">
+                        <div class="fbed">
+                            <h4>Lily Will</h4>
+                        </div>
+                        <div class="sbed">
+                            <p>Volunteer</p>
+                        </div>
+                        <div class="tbed">
+                            <span><i class="fab fa-facebook-f bicn"></i></span>
+                            <span><i class="fab fa-twitter bicn"></i></span>
+                            <span><i class="fab fa-instagram bicn"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="beitm">
+                    <div class="bet">
+                        <img src="images/t2.jpg">
+                    </div>
+                    <div class="bed">
+                        <div class="fbed">
+                            <h4>Jill Kent</h4>
+                        </div>
+                        <div class="sbed">
+                            <p>Volunteer</p>
+                        </div>
+                        <div class="tbed">
+                            <span><i class="fab fa-facebook-f bicn"></i></span>
+                            <span><i class="fab fa-twitter bicn"></i></span>
+                            <span><i class="fab fa-instagram bicn"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="beitm">
+                    <div class="bet">
+                        <img src="images/t3.jpg">
+                    </div>
+                    <div class="bed">
+                        <div class="fbed">
+                            <h4>Rose Hunt</h4>
+                        </div>
+                        <div class="sbed">
+                            <p>Volunteer</p>
+                        </div>
+                        <div class="tbed">
+                            <span><i class="fab fa-facebook-f bicn"></i></span>
+                            <span><i class="fab fa-twitter bicn"></i></span>
+                            <span><i class="fab fa-instagram bicn"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="beitm">
+                    <div class="bet">
+                        <img src="images/t4.jpg">
+                    </div>
+                    <div class="bed">
+                        <div class="fbed">
+                            <h4>Mart Kelly</h4>
+                        </div>
+                        <div class="sbed">
+                            <p>Volunteer</p>
+                        </div>
+                        <div class="tbed">
+                            <span><i class="fab fa-facebook-f bicn"></i></span>
+                            <span><i class="fab fa-twitter bicn"></i></span>
+                            <span><i class="fab fa-instagram bicn"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="bbox">
+            <div class="xlt">
+                <h3>See our Events</h3>
+                <h2>Our Blog</h2>
+            </div>
+            <div class="xrt">
+                <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloremque tenetur
+                        reiciendis
+                        aliquid volup</b></p>
+            </div>
+            <div class="brow">
+                <div class="bitem">
+                    <div class="it">
+                        <div class="fit">
+                            <img src="images/d1.jpeg">
+                        </div>
+                        <div class="sit">
+                            <h6>Blog</h6>
+                            <h4>Quisque a rhoncus</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et</p>
+                            <div class="ld">
+                                <div class="ll">
+                                    02/04/2021
+                                </div>
+                                <div class="lr">
+                                    4 Tags
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bitem">
+                    <div class="it">
+                        <div class="fit">
+                            <img src="images/d2.jpeg">
+                        </div>
+                        <div class="sit">
+                            <h6>Blog</h6>
+                            <h4>Quisque a rhoncus</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et</p>
+                            <div class="ld">
+                                <div class="ll">
+                                    02/04/2021
+                                </div>
+                                <div class="lr">
+                                    4 Tags
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bitem">
+                    <div class="it">
+                        <div class="fit">
+                            <img src="images/d3.jpeg">
+                        </div>
+                        <div class="sit">
+                            <h6>Blog</h6>
+                            <h4>Quisque a rhoncus</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et</p>
+                            <div class="ld">
+                                <div class="ll">
+                                    02/04/2021
+                                </div>
+                                <div class="lr">
+                                    4 Tags
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="touch">
+        <div class="contouch">
+            <div class="tobox">
+                <div class="toleft">
+                    <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloremque tenetur
+                            reiciendis
+                            aliquid volup</b></p>
+                </div>
+                <div class="toright">
+                    <div class="tfright">
+                        <h6>Get Touch in</h6>
+                    </div>
+                    <div class="tsright">
+                        <h3>Contact Us</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="infobo">
+                <div class="boleft">
+                    <form action="#" autocomplete="off" method="POST">
+                        <div class="formarea">
+                            <input type="text" name="Name" placeholder="Name" required>
+                        </div>
+                        <div class="formarea">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="formarea">
+                            <input type="text" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="formarea">
+                            <textarea name="msg" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="fbutton">Send</button>
+                    </form>
+                </div>
+                <div class="boright">
+                    <div class="frt">
+                        <div class="ffrt">
+                            <span><i class="fas fa-building"></i></span>
+                        </div>
+                        <div class="sfrt">
+                            <h6>Address</h6>
+                            <p>Tokha-06, Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    <div class="srt">
+                        <div class="fsrt">
+                            <span><i class="fas fa-phone-alt"></i></span>
+                        </div>
+                        <div class="ssrt">
+                            <h6>Phone</h6>
+                            <p>+977 1234567890</p>
+                            <p>+977 1234567890</p>
+                        </div>
+                    </div>
+                    <div class="trt">
+                        <div class="tfrt">
+                            <span><i class="fas fa-mail-bulk"></i></span>
+                        </div>
+                        <div class="tsrt">
+                            <h6>Email</h6>
+                            <p>info@example.com</p>
+                            <p>demo@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3530.789990402881!2d85.3243833151292!3d27.754622830019443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1ecd1c48fe75%3A0xc53129ca0e8165c6!2sGrande%20Towers!5e0!3m2!1sen!2snp!4v1619837136657!5m2!1sen!2snp"
+            width="1424" height="328" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <hr>
+
+    <div class="footer">
+        <div class="ffot">
+            <span>&copy; Copyright. All right Reserved @ Alpha 2021</span>
+        </div>
+        <div class="sfot">
+            <span><i class="fab fa-facebook-f foi"></i></span>
+            <span><i class="fab fa-twitter foi"></i></span>
+            <span><i class="fas fa-hands-helping foi"></i></span>
+            <span><i class="fab fa-vk foi"></i></span>
+        </div>
+        <div class="tfot">
+            <span><i class="fas fa-chevron-up foi"></i></span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
